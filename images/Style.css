@@ -1,0 +1,54 @@
+BODY {
+	FONT-SIZE: 12px
+}
+TD {
+	FONT-SIZE: 12px
+}
+TH {
+	FONT-SIZE: 12px
+}
+.style6 {
+	COLOR: #666666
+}
+.style7 {
+	COLOR: #006600; HEIGHT: 15px
+}
+.xiala {
+	WIDTH: 150px; HEIGHT: 10px
+}
+.style2 {
+	FONT-SIZE: 12px; COLOR: #000000
+}
+.unnamed1 {
+	FONT-WEIGHT: bold; COLOR: #006600; BOTTOM: 1px
+}
+.unnamed2 {
+	FONT-SIZE: 12px; COLOR: #000000; BOTTOM: 20px
+}
+.unnamed3 {
+	
+}
+A:link {
+	COLOR: #0068bc; FONT-FAMILY: "Tahoma", "Verdana", "宋体"; TEXT-DECORATION: none
+}
+A:visited {
+	COLOR: #0068bc; FONT-FAMILY: "Tahoma", "Verdana", "宋体"; TEXT-DECORATION: none
+}
+A:hover {
+	COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, "宋体"; TEXT-DECORATION: none
+}
+SELECT {
+	FONT-SIZE: 11px; COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, "宋体"; BACKGROUND-COLOR: #ffffff
+}
+.profilename {
+	FONT-WEIGHT: bold; FONT-SIZE: 28px
+}
+.topmenu A:link {
+	COLOR: #f2f2f2; TEXT-DECORATION: none
+}
+.topmenu A:visited {
+	COLOR: #f2f2f2; TEXT-DECORATION: none
+}
+.topmenu A:hover {
+	COLOR: #000000; FONT-FAMILY: Tahoma, Verdana, "宋体"; TEXT-DECORATION: none
+}

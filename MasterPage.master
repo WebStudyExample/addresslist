@@ -1,0 +1,82 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>通讯录</title>
+    <link rel="stylesheet" href="styles/style.css" type="text/css" media="screen" />
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper">
+        <div id="header">
+            <img src="images/header.png" width="770" height="119" alt="Mint Chocolate Chip" /></div>
+        <div id="maincontainer">
+            <div id="nav">
+                <div id="navinner">
+                    <ul>
+                        <li><a href="index.aspx" class="active">首页</a></li>
+                        <li><a href="#">我的主页</a></li>
+                        <li><a href="#">同学动静</a></li>
+                        <li><a href="#">同学日志</a></li>
+                        <li><a href="#">相册</a></li>
+                        <li><a href="#">留言板</a></li>
+                        <li><a href="#">搜索</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div id="padding">
+            </div>
+            <div id="content">
+                <div class="tips">
+                    用户<asp:Literal ID="ltrUser" runat="server"></asp:Literal>
+                    已登录，当前时间:<%=DateTime.Now.ToString()%>
+                    <a href="Loginout.aspx">注销</a>
+                </div>
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                </asp:ContentPlaceHolder>
+            </div>
+            <div id="newsbox">
+                <div id="innernews">
+                    <asp:Calendar ID="Calendar1" runat="server" BackColor="White" BorderColor="White"
+                        BorderWidth="1px" Font-Names="Verdana" Font-Size="9pt" ForeColor="Black" Height="190px"
+                        Width="163px" NextPrevFormat="FullMonth">
+                        <SelectedDayStyle BackColor="#333399" ForeColor="White" />
+                        <TodayDayStyle BackColor="#CCCCCC" />
+                        <OtherMonthDayStyle ForeColor="#999999" />
+                        <NextPrevStyle Font-Size="8pt" ForeColor="#333333" Font-Bold="True" VerticalAlign="Bottom" />
+                        <DayHeaderStyle Font-Bold="True" Font-Size="8pt" />
+                        <TitleStyle BackColor="White" Font-Bold="True" Font-Size="12pt" ForeColor="#333399"
+                            BorderColor="Black" BorderWidth="4px" />
+                    </asp:Calendar>
+                    <div class="subnav">
+                        <h2>
+                            好友信息管理</h2>
+                        <ul>
+                            <li><a href="infoNew.aspx">添加好友</a></li>
+                            <li><a href="infoEdit.aspx">修改好友</a></li>
+                            <li><a href="infoShow.aspx">查询好友</a></li>
+                            <li><a href="infoDelete.aspx">删除好友</a></li>
+                            <li><a href="infoMngPhoto.aspx">更新好友照片</a></li>
+                        </ul>
+                        <h2>
+                            个人信息管理</h2>
+                        <ul>
+                            <li><a href="manageSort.aspx">管理好友分类</a></li>
+                            <li><a href="ModifyPwd.aspx">修改密码</a></li>
+                            <li><a href="LoginOut.aspx">退出</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            <img src="images/footer.png" width="770" height="32" alt="Footer" />
+            <p>
+                &copy; 2009 MurphySom | Design by <a href="#">Zhuhongtao</a> | QQ:26805376</p>
+        </div>
+    </div>
+    </form>
+</body>
+</html>
